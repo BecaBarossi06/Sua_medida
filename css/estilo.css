@@ -4,18 +4,30 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: black;
-    color: #333;
     /* Definindo a fonte padrão e removendo margens e espaçamentos padrões */
 }
 
 header {
-    background-color: white;
-    color: #fff;
+    background-image: url('img/logofundo.png');
+    color: white;
     padding: 20px 0;
     text-align: center;
     /* Estilo do cabeçalho */
 }
 
+a:link{
+color: white;
+padding: 10px;
+text-decoration: none;
+}
+a:visited{
+color: white;
+}
+a:hover{
+color: #919396;
+background-color: #333333;
+border-radius: 5px;
+}
 .logo {
   max-width: 200px; /* Ajuste o tamanho máximo da logo */
   height: auto; /* Mantém a proporção da imagem */
@@ -101,12 +113,67 @@ section {
     margin-top: 10px;
     /* Estilo da descrição abaixo das imagens */
 }
-
-
+#section2 p{
+    color: white;
+    text-align: justify;
+    padding: 15px;
+}
+#section1, #section2, #section3 h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+form label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+form input{
+    background-color: #CFD1D2;
+    width: 300px;
+    height: 50px;
+    padding: 0 5%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 90%;
+    border: 1px solid #515254;
+    border-radius: 8px;
+}
+form input[type="submit"]{
+    width: 50%;
+    margin-top: 5%;
+    border-radius: 32px;
+    background: #6c63ff;
+    color: white;
+    font-size: 90%;
+}
+form input[type="submit"]:hover {
+    background-color: #919396;
+    font-size: 100%;
+}
+button {
+    background-color: #CFD1D2;
+    font-size: 100%;
+    color: black;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+placeholder {
+    color: #CFD1D2;
+}
+h1{
+    color: #A1A2A6;
+}
 
 footer {
 
-    background-color: #F7F6F4;
+    background-color: white;
     color: black;
     padding: 20px 0;
 }
@@ -116,15 +183,15 @@ footer {
 .footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 1 auto 15;
+  margin: 0 auto;
 }
 /*inicio da sessão rodape*/
 .footer-section {
   flex: 1;
-  margin: 15px;
-  margin-left: 5px;
+  margin: 10px;
 }
 /*subtitulo do rodape*/
 .footer-section h4, {
@@ -133,7 +200,7 @@ footer {
 /*lista rodape*/
 .footer-section ul {
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 .footer-section ul li {
@@ -173,19 +240,6 @@ footer {
   margin-top: 20px;
   font-size: 14px;
 }
-
-
-
-    /*
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 1px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    float: right;
-    /* Estilo do rodapé fixo */
 
 
 iframe{

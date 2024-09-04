@@ -7,45 +7,58 @@
     <!-- Define a escala inicial e a largura da viewport para uma visualização responsiva em dispositivos móveis -->
     <link rel="stylesheet" href="css/estilo.css">
     <!-- Link para a pasta e o arquivo de estilos CSS que define a aparência do documento -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     
+</head>
     <title>Sua Medida - Ateliê de costura</title>
     <!-- Define o título da página, que aparece na aba do navegador -->
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-    <header>
-        <img src="img/logo.jpeg" alt="Logo" class="logo">
-        <!-- Cabeçalho do site -->
-        <nav>
+
+<header>
+    <img src="img/logo.jpeg" alt="Logo" class="logo">
+    <!-- Cabeçalho do site -->
+    <nav>
             <!-- Seção de navegação -->
-            <ul>
-                <!-- Lista de itens de navegação -->
-                <li><a href="#home">Home</a></li>
-                <!-- Link para a seção 'home' dentro da mesma página -->
-                <li><a href="historia.html">História</a></li>
-                <!-- Link para a página 'historia.html' -->
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Roupas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Cadastre-se</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="home">
-        <!-- Seção principal da página, identificada por 'home' -->
-        <ul>
-            <!-- Lista de itens dentro da seção -->
-            <li>
-                <!-- Item da lista com imagem e descrição -->
-                <img src="img/roupa1.jpeg" alt="roupa1">
-                <!-- Imagem do item, com texto alternativo para acessibilidade -->
-                <div class="home-descricao">
-                    <!-- Div para a descrição do item -->
-                    <p>Cropped branco</p>
-                    <!-- Nome do item -->
-                    <p>TAM: M</p>
-                    <!-- Tamanho do item -->
-                    <p>R$ 50,00</p>
-                    <!-- Preço do item -->
-                </div>
-            </li>
-            <li>
+        </div>
+    </nav>
+</header>
+<!--seção de navegação das paginas-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"></nav>
+
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+  <h1>Roupas</h1>
+  <section id="home" class="home">
+   <ul>
+    <!-- Lista de itens dentro da seção -->
+     <li>
+        <!-- Item da lista com imagem e descrição -->
+        <img src="img/roupa1.jpeg" alt="roupa1">
+        <!-- Imagem do item, com texto alternativo para acessibilidade -->
+        <div class="home-descricao">
+            <!-- Div para a descrição do item -->
+            <p>Cropped branco</p>
+            <!-- Nome do item -->
+            <p>TAM: M</p>
+            <!-- Tamanho do item -->
+            <p>R$ 50,00</p>
+            <!-- Preço do item -->
+        </div>
+        </li>
+        <li>
                 <!-- Outro item da lista com imagem e descrição -->
                 <img src="img/roupa2.jpeg" alt="roupa2">
                 <!-- Imagem do item, com texto alternativo para acessibilidade -->
@@ -74,49 +87,76 @@
                 </div>
             </li>
         </ul>
-    </section>  
-    
-    <footer>
+    </section> 
+</div>
 
-         <div class="footer-container">
-    <div class="footer-section">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.827625287934!2d-46.32479342518252!3d-23.3944523554805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce87785706619d%3A0x32fab1c5bd6fe009!2sSua%20Medida%20Ateli%C3%AA%20de%20Costura!5e0!3m2!1spt-BR!2sbr!4v1724029747272!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
-    </div>
-    <div class="footer-section">
-      <h4>Início</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="historia.html">História</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Informações</h4>
-      <ul>
-        <li> Sua Medida, transforma roupas personalizadas que refletem seu estilo. Nossa equipe dedicada cria peças com qualidade e criatividade, valorizando o processo artesanal e os detalhes que fazem a diferença. Aqui, seu estilo é a nossa inspiração. </li>
-      </ul>
-    </div>   
-        <div class="footer-section social-media">
-            <div class="footer-section"> 
-            <h4>Contato</h4>
-          <a href="https://www.instagram.com/suamedidaatelie?igsh=MXF2ODNwNTl4cXRpNQ=="><i> <img src="img/insta.jpeg"> </i></a>
-          <a href="https://wa.me/5511987654321" target="_blank" class="btn-whatsapp"><i> <img src="img/wpp.jpg"> </i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>    
-  </div>
-  <div class="footer-copyright">
-    &copy; 2024 Sua Medida - Ateliê de costura
-  </div>
+<div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+    <h1>Sobre nós</h1>
+    <!--historia-->
+    <p>Ao contrário da crença popular, Lorem Ipsum não é simplesmente um texto aleatório. Ele tem raízes em uma parte da literatura latina clássica de 45 a.C., o que o torna mais de 2000 anos de idade. Richard McClintock, um professor de latim no Hampden-Sydney College na Virgínia, pesquisou uma das palavras latinas mais obscuras, consectetur, de uma passagem de Lorem Ipsum e, passando pelas citações da palavra na literatura clássica, descobriu a fonte indubitável. Lorem Ipsum vem das seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal) de Cícero, escrito em 45 a.C. Este livro é um tratado sobre a teoria da ética, muito popular durante o Renascimento. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..", vem de uma linha na seção 1.10.32.
 
-        <!-- Rodapé da página -->
+O pedaço padrão do Lorem Ipsum usado desde 1500 é reproduzido abaixo para os interessados. As seções 1.10.32 e 1.10.33 de "de Finibus Bonorum et Malorum" de Cícero também são reproduzidas em sua forma original exata, acompanhadas por versões em inglês da tradução de 1914 por H. Rackham.</p>
+</div>
+
+<div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+    <!--formulario-->
+  <h1>Cadastre-se</h1>
+  <form action="/action_page.php"> <!-- nome do arquivo php aquiiii-->
+        <div class="mb-3 mt-3">
+          <label for="email">Nome:</label>
+          <input type="nome" class="form-control" id="nome" placeholder="Enter nome" name="nome">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="pwd">Senha:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+</div>
+
+    <!-- Rodapé da página -->
+<footer>
+    <div class="footer-container">
+    <div class="footer-section">
         <!-- Mapa do endereço -->
-        <!--
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.827625287934!2d-46.32479342518252!3d-23.3944523554805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce87785706619d%3A0x32fab1c5bd6fe009!2sSua%20Medida%20Ateli%C3%AA%20de%20Costura!5e0!3m2!1spt-BR!2sbr!4v1724029747272!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe> 
-        <p> WhatsApp: (11)95300-4751 <br/> -->
-            <!-- Informações de contato com o número de WhatsApp -->
-<!--
-            &copy; 2024 Sua Medida - Ateliê de costura
-           Direitos autorais e nome da empresa -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.827625287934!2d-46.32479342518252!3d-23.3944523554805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce87785706619d%3A0x32fab1c5bd6fe009!2sSua%20Medida%20Ateli%C3%AA%20de%20Costura!5e0!3m2!1spt-BR!2sbr!4v1724029747272!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-section">
+        <h4>Início</h4>
+        <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">Roupas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">Cadastre-se</a>
+                </li>
+            </ul>
+    </div>
+    <div class="footer-section">
+        <h4>Informações</h4>
+          <ul>
+            <li> Sua Medida, transforma roupas personalizadas que refletem seu estilo. Nossa equipe dedicada cria peças com qualidade e criatividade, valorizando o processo artesanal e os detalhes que fazem a diferença. Aqui, seu estilo é a nossa inspiração. </li>
+          </ul>
+    </div>   
+    <div class="footer-section social-media">
+        <div class="footer-section"> 
+            <h4>Contato</h4>
+            <a href="https://www.instagram.com/suamedidaatelie?igsh=MXF2ODNwNTl4cXRpNQ=="><i> <img src="img/insta.jpeg"> </i></a>
+            <a href="https://wa.me/5511987654321" target="_blank" class="btn-whatsapp"><i> <img src="img/wpp.jpg"> </i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>    
+    <div class="footer-copyright">
+        &copy; 2024 Sua Medida - Ateliê de costura
+    </div>
+        
         
   
 
