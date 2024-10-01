@@ -3,27 +3,42 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
+    background-color: #EBECEA;
     /* Definindo a fonte padrão e removendo margens e espaçamentos padrões */
 }
 
 header {
-    background-image: url('img/logofundo.png');
     color: white;
     padding: 20px 0;
     text-align: center;
     /* Estilo do cabeçalho */
 }
 
-a:link{
-color: white;
+#area_cabecalho{
+	background-position:center;
+    background-image: url(../img/fundo.jpeg);
+	background-repeat: no-repeat;
+	padding: 15px;
+	text-align: center;
+	height: 600px;}
+
+    #area_logo {
+        padding: 10px;
+        font-style: italic;
+    }
+#cor_logo{
+    font-size: 100px;
+}
+.container-fluid a:link{
+font-size: 20px;
+color: #404040;
 padding: 10px;
 text-decoration: none;
 }
-a:visited{
-color: white;
+.container-fluid a:visited{
+color: #404040;
 }
-a:hover{
+.container-fluid Sa:hover{
 color: #919396;
 background-color: #333333;
 border-radius: 5px;
@@ -33,28 +48,27 @@ border-radius: 5px;
   height: auto; /* Mantém a proporção da imagem */
   color: #fff;
 }
-
+nav{
+    text-align: center;
+}
 nav ul {
     list-style: none;
-    padding: 0;
     /* Removendo a lista padrão */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
     /* Navegação horizontal */
 }
 
 a {
     color: black;
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
     /* Estilizando os links */
 }
 
 a:hover {
-    color: #3498db;
+    color: white;
     /* Efeito hover para links */
 }
 
@@ -114,11 +128,12 @@ section {
     /* Estilo da descrição abaixo das imagens */
 }
 #section2 p{
-    color: white;
+    color: black;
     text-align: justify;
     padding: 15px;
+    font-size: 28px;
 }
-#section1, #section2, #section3 h1{
+#section1, #section2, #section3, #section4 h1{
     text-align: center;
 }
 form{
@@ -130,7 +145,7 @@ form{
 form label{
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
 }
 form input{
     background-color: #CFD1D2;
@@ -148,12 +163,11 @@ form input[type="submit"]{
     width: 50%;
     margin-top: 5%;
     border-radius: 32px;
-    background: #6c63ff;
     color: white;
     font-size: 90%;
 }
 form input[type="submit"]:hover {
-    background-color: #919396;
+    background-color: black;
     font-size: 100%;
 }
 button {
@@ -164,11 +178,11 @@ button {
     margin-top: 10px;
     border-radius: 10px;
 }
-placeholder {
-    color: #CFD1D2;
+.placeholder {
+    color:black;
 }
 h1{
-    color: #A1A2A6;
+    color: #404040;
 }
 
 footer {
@@ -177,15 +191,11 @@ footer {
     color: black;
     padding: 20px 0;
 }
-
-
 /*rodape*/
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  max-width: 1200px;
   margin: 0 auto;
 }
 /*inicio da sessão rodape*/
@@ -194,7 +204,7 @@ footer {
   margin: 10px;
 }
 /*subtitulo do rodape*/
-.footer-section h4, {
+.footer-section h4 {
   margin-bottom: 10px;
 }
 /*lista rodape*/
@@ -227,7 +237,7 @@ footer {
 }
 
 .footer-section.social-media a {
-  color: black;
+  color: #bbb8b4;
   font-size: 20px;
   margin: 0 10px;
   text-decoration: none;
@@ -242,7 +252,16 @@ footer {
 }
 
 
-iframe{
-    float: right;
 
+
+/* Estilos para a seção do perfil */
+#perfil {
+    background-color: black; /* Cor de fundo leve */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border-bottom: 1px solid #dee2e6; /* Linha de separação */
+}
+
+header {
+    margin-top: 0px; /* Espaço entre o perfil e o cabeçalho */
 }
