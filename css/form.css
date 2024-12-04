@@ -20,30 +20,26 @@ form{
 }
 
 form label{
-    color: #EBC181;
     font-weight: bold;
     margin-bottom: 5px;
 }
-form input{
-    border-radius: 10px;
-    border: 3px solid;
-    padding: 10px;
-    margin-bottom: 10px;
-    transition: 0.5s;
-}
 
-form input[type='file']{
-    color: #FFFFFF;
-}
-
-form input::file-selector-button{
-    padding: 5px;
-    border-radius: 5px;
+.botao-cadastrar-produto{
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
     border: none;
+    transition: 0.5s;
+    background: black;
+    margin: 30px auto 0;
+    margin-bottom: 30px;
 }
-
-
-form input:focus{
-    border: 3px solid #EBC181;
-    outline: none;
+.cadastrop{
+    align-items: center;
+    display: flex;
 }

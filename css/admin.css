@@ -1,41 +1,39 @@
-body{
-    background-color:  #333333;
+.produtos {
+    background-color:    #333333;
 }
-.container-admin-banner{
+.container-admin-banner {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 80px 0px 20px;
+    align-content:  center;
 }
 
-.logo-admin{
+.logo-admin {
     width: 400px;
 }
 
-h2{
+h2 {
     font-size: 24px;
     color: white;
     text-align: center;
-    margin: 0%;
 }
-
-.container-table{
+.container-table {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-table{
+table {
     width: 90%;
     margin: auto 0;
 }
-table, th, td{
-    border: 1px solid #EBC181;
+table, th, td {
+    border: 1px solid #fafafa;
 }
 
-table th{
+table th {
     padding: 11px 0 11px;
-    background-color: #EBC181;
+    background-color: #BFBFBF;
     color: black;
     font-weight: bold;
     font-size: 18px;
@@ -43,22 +41,22 @@ table th{
     padding: 8px;
 }
 
-table tr{
-    border: 1px solid #ddd;
+table tr {
+    border: 1px solid ;
 }
 
-table td{
+table td {
     color: #FFF;
     font-size: 18px;
     padding: 8px;
 }
-.container-admin-banner h1{
+.container-admin-banner h1 {
     margin-top: 40px;
     font-size: 30px;
-    color: #EBC181;
+    color: black;
 }
 
-.container-lista-produtos{
+.container-lista-produtos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +64,7 @@ table td{
     margin: auto 0;
 }
 
-.container-lista{
+.container-lista {
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -77,13 +75,13 @@ table td{
     margin: 3px 0;
 }
 
-.container-lista h3{
+.container-lista h3 {
     color: #FFFFFF;
     font-weight: 600;
     font-size: 20px;
 }
 
-table tbody tr td a, .botao-cadastrar, .botao-editar, .botao-excluir{
+table tbody tr td a, .botao-editar, .botao-excluir {
     padding: 3px 10px;
     border-radius: 10px;
     color: #FFFFFF;
@@ -95,27 +93,49 @@ table tbody tr td a, .botao-cadastrar, .botao-editar, .botao-excluir{
 }
 
 
-table tbody tr td a:hover, .botao-cadastrar:hover, .botao-editar:hover,.botao-excluir:hover{
+table tbody tr td a:hover, .botao-cadastrar:hover, .botao-editar:hover,.botao-excluir:hover {
     cursor: pointer;
     filter: saturate(150%);
 }
 
-.botao-cadastrar{
-    background: #EBC181;
-    color: black;
+.botao-cadastrar {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
     font-weight: 600;
-    margin-top: 20px;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 10px 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
     border: none;
+    transition: 0.5s;
+    background: black;
+    margin: 30px auto 0;
+    margin-bottom: 30px;
+  }
+.botao-editar {
+    background: grey;
+    width: 100%;
 }
 
-
-.botao-editar{
-    background: #9B8357;
-}
-
-.botao-excluir{
+.botao-excluir {
     background: crimson;
+    width: 100%;
+    font-family: "Raleway", sans-serif
+}
+  
+form input[type="submit"] {
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 32px;
+    color: white;
+    font-size: 90%;
+}
+
+.cadastrop{
+    align-items: center;
+    display: flex;
+}
+main{
+    display: grid;
 }
