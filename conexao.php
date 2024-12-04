@@ -1,14 +1,8 @@
 <?php
-
-error_reporting(E_ALL);
-ini_set('display_error',1);
-
-
-
-$servername = "localhost";  // ou o nome do seu servidor
-$username = "hostdeprojetos_suamedida";  // nome de usuário do banco
-$password = "ifspgru@2022";  // senha do banco (pode estar vazia se você estiver usando XAMPP)
-$dbname = "hostdeprojetos_suamedida";  // nome do banco de dados
+$servername = "144.217.39.54";  // IP do servidor do banco de dados
+$username = "hostdeprojetos";  // Usuário
+$password = "ifspgru@2022";  // Senha
+$dbname = "hostdeprojetos";  // Nome do banco
 
 // Cria a conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,4 +11,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
+
+echo "";
 ?>
