@@ -1,7 +1,7 @@
 <?php
 $servername = "144.217.39.54";  // IP do servidor do banco de dados
-$username = "ifhostgru";  // Usuário
-$password = "ifspgru@2024";  // Senha
+$username = "hostdeprojetos";  // Usuário
+$password = "ifspgru@2022";  // Senha
 $dbname = "hostdeprojetos_suamedida";  // Nome do banco
 
 // Cria a conexão
