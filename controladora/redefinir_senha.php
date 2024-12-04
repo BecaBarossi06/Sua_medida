@@ -122,12 +122,7 @@ $conn->close();
         <button type="submit" class="btn-cadastrar">Redefinir Senha</button>
     </form>
 
-    <?php
-    // Exibir erros de validação, se houver
-    if (isset($erro)) {
-        echo "<p style='color:red;'>$erro</p>";
-    }
-    ?>
+  
     </div>
 
 <footer>
