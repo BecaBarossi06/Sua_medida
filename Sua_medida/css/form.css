@@ -1,0 +1,45 @@
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+}
+
+.container-radio{
+    display: flex;
+}
+
+.container-radio div{
+    padding: 10px;
+}
+
+form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.botao-cadastrar-produto{
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+    background: black;
+    margin: 30px auto 0;
+    margin-bottom: 30px;
+}
+.cadastrop{
+    align-items: center;
+    display: flex;
+}

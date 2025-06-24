@@ -1,0 +1,662 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', 'Times, serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EBECEA;
+    /* Definindo a fonte padrão e removendo margens e espaçamentos padrões */
+}
+
+header {
+    color: white;
+    text-align: center;
+    /* Estilo do cabeçalho */
+}
+
+#area_cabecalho {
+	background-position: center;
+    background-image: url(../img/fundo.jpeg);
+	background-repeat: no-repeat;
+	padding: 15px;
+	text-align: center;
+	height: 600px;
+
+}
+
+#area_logo {
+        padding: 10px;
+        font-style: italic;
+    }
+#cor_logo {
+    font-size: 100px;
+    color: #000;
+}
+
+.container-fluid a:link {
+font-size: 25px;
+padding: 10px;
+text-decoration: none;
+font-family: "Raleway", "sans-serif";
+}
+
+
+.container-fluid a:hover {
+color: #919396;
+background-color: #333333;
+border-radius: 5px;
+}
+
+
+.logo {
+  max-width: -200px; /* Ajuste o tamanho máximo da logo */
+  height: auto; /* Mantém a proporção da imagem */
+}
+nav {
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    /* Removendo a lista padrão */
+}
+
+nav ul li {
+    display: inline;
+    color: #919396;
+    /* Navegação horizontal */
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+    /* Estilizando os links */
+}
+
+a:hover {
+    color: #404040;
+    /* Efeito hover para links */
+}
+
+section {
+    max-width: 900px;  /* Ajuste para o tamanho desejado */
+    margin: 20px auto;
+    padding: 20px;
+    /* Ajuste do tamanho da seção e remoção de padding extra */
+}
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); /* Tamanho das colunas ajustáveis */
+    gap: 50px; /* Reduzindo o espaçamento entre os itens */
+    padding: 60px 350px;
+    justify-items: center;
+
+}
+
+.home div {
+    position: relative;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden; /* Garante que a imagem se mantenha dentro do contêiner */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    flex-direction: column;
+    padding: 15px; /* Ajustando o padding para reduzir o espaço geral */
+}
+
+.home img {
+    width: 90%; /* Imagem com fundo menor */
+    height: 350px; /* Altura da imagem reduzida */
+    object-fit: cover; /* Ajusta as imagens sem distorção */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+
+
+
+.home div:hover img {
+    transform: scale(1.1); /* Efeito de zoom na imagem */
+}
+
+.home .home-descricao {
+    font-size: 19px;
+    color: #333;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 10px;
+    padding-top: 2px;
+    border-radius: 8px; /* Fundo suave nas descrições */
+}
+
+.home .home-descricao h5 {
+    font-size: 18px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.home .home-descricao p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.home .home-descricao .preco {
+    font-size: 18px;
+    color: #e74c3c; /* Preço em vermelho */
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .home {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Menos colunas em telas menores */
+    }
+}
+#section2{
+    background-color: #d9d9d9;
+    padding: 50px;
+}
+#section2 p {
+    color: #595959;
+    text-align: justify;
+    padding-right: 25px;
+    font-size: 20px;
+    font-family: 'Alkatra', sans-serif; /* Usando a mesma fonte Oswald */
+    line-height: 35px;
+
+}
+.imagem {
+    float: left; /* Imagem à esquerda */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    width: 400px; /* Defina o tamanho da imagem, caso necessário */
+    padding-left: 20px;
+    border-radius: 15px;
+}
+#section1, #section2, #section3, #section4 h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+form input {
+    background-color: #0F0F0F;
+    width: 300px;
+    height: 50px;
+    padding: 0 5%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 90%;
+    border: 1px solid #515254;
+    border-radius: 8px;
+}
+form input[type="submit"] {
+    width: 50%;
+    margin-top: 5%;
+    border-radius: 32px;
+    color: white;
+    font-size: 90%;
+}
+form input[type="submit"]:hover {
+    background-color: black;
+    font-size: 100%;
+}
+button {
+    background-color: grey;
+    font-size: 90%;
+    color: black;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+ 
+}
+.placeholder {
+    color:black;
+}
+
+h1 {
+   color: black;
+   font-size: 25px;
+}
+/* Rodapé */
+footer {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+}
+
+
+.footer-container { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Alinha as seções corretamente */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  width: 100%; /* Garante que o container ocupe a largura total */
+  position: sticky; /* Faz o rodapé ficar fixado no final */
+  bottom: 20; /* Cola o rodapé na parte inferior */
+  left: 0; /* Garante alinhamento na esquerda */
+  padding: 10px; /* Adiciona um espaçamento interno */
+}
+
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+
+}
+
+/* Subtítulo das seções do rodapé */
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+/* Lista das seções do rodapé */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.footer-section ul li a {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    color: black;
+
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+
+}
+
+/* Fotos das mídias sociais para contato */
+.footer-section.social-media {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section.social-media img {
+  height: 50px;
+  width: 50px;
+}
+
+.footer-section.social-media a {
+  color: #bbb8b4;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Copyright: centraliza e coloca abaixo de "Informações" e "Início" */
+.footer-copyright {
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Garante que ocupe a largura total do rodapé */
+    margin-top: 20px; /* Um pequeno espaço entre o conteúdo e o copyright */
+    font-size: 14px;
+    padding-top: 10px; /* Ajusta a distância do copyright do conteúdo */
+}
+
+
+
+/* Estilos para a seção do perfil */
+#perfil {
+    background-color: black; /* Cor de fundo leve */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    border-bottom: 1px solid #dee2e6; /* Linha de separação */
+}
+/*
+header {
+    margin-top: 0px; /* Espaço entre o perfil e o cabeçalho *
+}*/
+span {
+    color: #404040;
+}
+
+.form-cadastrar {
+    background-color: #202020;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    margin: 0px auto 0;
+}
+
+form input {
+    display: flex;
+}
+
+form input::file-selector-button {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+form label {
+    color: #FAFAFA;
+}
+.form-h1 {
+    color: #FAFAFA;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+form input:focus { 
+    border: 3px solid #303030;
+    outline: none;
+    background-color: #414141;
+}
+
+.btn-cadastrar {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+    background: #FAFAFA;
+    width: 50%;
+    margin: 30px auto 0;
+    margin-bottom: 30px;
+  }
+  .btn-cadastrar:hover {
+    background:  #101010;
+    color: #A0A0A0;
+  }
+.btn-cadastrargerar{
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+    background: #FAFAFA;
+    width: 50%;
+    margin: 30px auto 0;
+    margin-bottom: 30px;
+}
+.btn-cadastrargerar a{
+ text-decoration: none;
+}
+  .form-login {
+    background-color: #202020;
+    border-radius: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    margin: 0px auto 0;
+}
+
+
+.btn-login {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.5s;
+    background: #FAFAFA;
+    width: 50%;
+    margin: 30px auto 0;
+    margin-bottom: 30px;
+  }
+  .btn-redefinir {
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 50px;
+        border: none;
+        transition: 0.5s;
+        background: #FAFAFA;
+        width: 50%;
+        margin: 30px auto 0;
+        margin-bottom: 30px;
+  }
+
+  .btn-redefinir:hover {
+    background:  #101010;
+    color: #A0A0A0;
+  }
+
+  .btn-login:hover {
+    background:  #101010;
+    color: #A0A0A0;
+  }
+
+
+/*finalizar compra */
+
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container-finalizar-cmp {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.class {
+    text-align: center;
+    color: white;
+    font-family: 'Georgia', 'Times New Roman', 'Times, serif';
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+td img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo dos botões */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.btn-container {
+    display: flex; /* Habilita o modelo Flexbox */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    gap: 20px; /* Adiciona espaçamento entre os botões */
+    margin-top: 20px; /* Margem superior para espaçamento */
+}
+
+
+/* Botões com cores específicas */
+.btn-danger {
+    background-color: #dc3545; /* Cor de fundo para 'Voltar' e 'Limpar' */
+}
+
+.btn-finalizar {
+    background-color: black; /* Cor de fundo para 'Finalizar Compra' */
+}
+
+.btn-danger {
+    background-color:#8C8C8C;
+}
+
+.btn-success {
+    background-color: #202020;
+}
+
+/* Estilo de link de remover */
+a {
+    color: black;
+    font-family: 'Georgia', 'Times New Roman', 'Times, serif';
+    font-size:  20px;
+    
+}
+
+a:hover {
+    text-decoration:#f4f4f4;
+}
+
+/* Tabela de preços */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+h3 {
+    text-align: right;
+    color: #333;
+}
+
+/* carrinho */
+.container-finalizarcmp {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-finalizarcmp h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container-finalizarcmp p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.container-finalizarcmp ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-finalizarcmp li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.container-finalizarcmp li:last-child {
+    border-bottom: none;
+}
+
+.container-finalizarcmp img {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.container-finalizarcmp .btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container-finalizarcmp .btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    color: white;
+  
+}
+
+.container-finalizarcmp .btn a {
+    color: white;
+    text-decoration: none;
+}
+
+#password-criteria {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.password-check {
+  color: red;
+  font-size: 14px;
+}
+
+.password-check.valid {
+  color: green;
+  text-decoration: line-through;
+}
+
